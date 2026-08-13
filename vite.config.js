@@ -11,7 +11,7 @@ export default defineConfig({
       manifest: {
         name: 'Salim Technology',
         short_name: 'SalimTech',
-        description: 'AI, software, and cloud infrastructure — engineered to move your business forward.',
+        description: 'Intelligent systems. Engineered for scale. AI-powered software and cloud infrastructure.',
         theme_color: '#0C5233',
         background_color: '#F5F5F2',
         display: 'standalone',

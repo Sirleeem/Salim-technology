@@ -28,9 +28,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 800;
-  font-size: 1.05rem;
-  letter-spacing: 0.08em;
   margin-bottom: var(--space-md);
 }
 
@@ -50,7 +47,6 @@
   .service-icon {
     width: 44px;
     height: 44px;
-    font-size: 0.95rem;
     margin-bottom: var(--space-sm);
   }
 }

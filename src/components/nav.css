@@ -12,8 +12,13 @@
 }
 
 .nav-scrolled {
-  background: rgba(245, 245, 242, 0.9);
+  background: rgba(245, 245, 242, 0.92);
   backdrop-filter: blur(12px);
+  box-shadow: 0 1px 0 var(--line);
+}
+
+.nav-menu-open {
+  background: var(--offwhite);
   box-shadow: 0 1px 0 var(--line);
 }
 
@@ -37,6 +42,11 @@
 .nav-brand-icon {
   width: 40px;
   height: 40px;
+  transition: box-shadow 0.2s ease;
+}
+
+.nav-scrolled .nav-brand-icon {
+  box-shadow: 0 0 0 1px rgba(10, 10, 12, 0.08), 0 2px 6px rgba(10, 10, 12, 0.10);
 }
 
 .nav-brand-name {
@@ -59,7 +69,7 @@
 .nav-links {
   display: flex;
   align-items: center;
-  gap: var(--space-md);
+  gap: var(--space-md2);
 }
 
 .nav-link {
@@ -73,11 +83,77 @@
 }
 
 .nav-cta {
-  padding: 0.6rem 1.3rem;
+  padding: 0.55rem 1.2rem;
   font-size: 0.9rem;
 }
 
+.nav-burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.nav-burger span {
+  display: block;
+  height: 2px;
+  width: 22px;
+  margin: 0 auto;
+  background: var(--text);
+  border-radius: 2px;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.nav-burger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-burger.open span:nth-child(2) { opacity: 0; }
+.nav-burger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.nav-mobile {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+  padding: var(--space-sm) var(--space-md) var(--space-md);
+  background: var(--offwhite);
+  border-bottom: 1px solid var(--line);
+  box-shadow: 0 24px 40px rgba(10, 10, 12, 0.10);
+  opacity: 0;
+  transform: translateY(-8px);
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.nav-mobile.open {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+}
+
+.nav-mobile-link {
+  padding: 0.85rem 0.25rem;
+  font-weight: 600;
+  color: var(--text);
+  border-bottom: 1px solid var(--line);
+}
+
+.nav-mobile-link:hover {
+  color: var(--pine);
+}
+
+.nav-mobile-cta {
+  margin-top: var(--space-xs);
+  justify-content: center;
+}
+
 @media (max-width: 700px) {
-  .nav-links .nav-link { display: none; }
-  .nav-cta { display: none; }
+  .nav-links { display: none; }
+  .nav-burger { display: flex; }
 }

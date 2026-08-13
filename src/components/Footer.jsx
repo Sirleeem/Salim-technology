@@ -35,9 +35,12 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="container footer-inner">
-        <div className="footer-brand">
-          <img src="/assets/salim-icon.svg" alt="" className="footer-icon" />
-          <span>SALIM TECHNOLOGY</span>
+        <div className="footer-brand-block">
+          <div className="footer-brand">
+            <img src="/assets/salim-icon.svg" alt="" className="footer-icon" />
+            <span>SALIM TECHNOLOGY</span>
+          </div>
+          <p className="footer-tagline">Engineered systems. Built to last.</p>
         </div>
         <div className="footer-links">
           {links.map((l) => (

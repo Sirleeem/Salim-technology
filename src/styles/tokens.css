@@ -24,10 +24,13 @@
   --fs-body: clamp(1rem, 1.2vw, 1.125rem);
   --fs-small: 0.875rem;
 
-  /* Spacing */
+  /* Spacing scale: 4 / 8 / 16 / 24 / 32 / 48 / 64 / 96 */
+  --space-2xs: 0.25rem;
   --space-xs: 0.5rem;
   --space-sm: 1rem;
+  --space-md2: 1.5rem;
   --space-md: 2rem;
+  --space-lg2: 3rem;
   --space-lg: 4rem;
   --space-xl: 6rem;
 
@@ -39,7 +42,7 @@
 
   /* Layout */
   --container: 1120px;
-  --nav-h: 72px;
+  --nav-h: 64px;
 }
 
 @media (max-width: 700px) {

@@ -36,11 +36,19 @@
   width: clamp(84px, 12vw, 128px);
   height: auto;
   filter: drop-shadow(0 12px 28px rgba(12, 82, 51, 0.18));
+  animation: heroFadeIn 0.7s ease both;
 }
 
 .hero-wordmark {
   width: min(520px, 84vw);
   height: auto;
+  animation: heroFadeIn 0.7s 0.1s ease both;
+}
+
+.hero-headline {
+  font-size: clamp(1.8rem, 4.2vw, 2.9rem);
+  max-width: 20ch;
+  animation: heroFadeUp 0.7s 0.22s ease both;
 }
 
 .hero-tagline {
@@ -48,6 +56,7 @@
   font-size: clamp(1.1rem, 2vw, 1.35rem);
   color: var(--text-muted);
   line-height: 1.55;
+  animation: heroFadeUp 0.7s 0.34s ease both;
 }
 
 .hero-actions {
@@ -56,6 +65,15 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: var(--space-xs);
+  animation: heroFadeUp 0.7s 0.46s ease both;
+}
+
+@keyframes heroFadeIn {
+  from { opacity: 0; transform: scale(0.97); }
+}
+
+@keyframes heroFadeUp {
+  from { opacity: 0; transform: translateY(14px); }
 }
 
 @media (max-width: 700px) {

@@ -9,18 +9,21 @@ const values = [
 export default function About() {
   return (
     <section id="about" className="about">
-      <div className="container about-grid">
-        <div className="about-statement">
-          <p className="section-label">Why Salim Technology</p>
-          <h2>Technology is only useful when it ships.</h2>
+      <div className="container">
+        <p className="section-label reveal">Why Salim Technology</p>
+        <h2 className="reveal">About Salim Technology</h2>
+        <div className="about-body reveal">
           <p className="about-lead">
-            We build AI, software, and cloud systems that are practical, reliable, and
-            built for the real work of your business. From first build to long-term operation.
+            Salim Technology is an engineering-focused practice that designs and builds intelligent software systems and cloud infrastructure.
+          </p>
+          <p>
+            We believe the best technology feels invisible — it simply works, scales, and compounds over time.
+            We build for teams that want systems that keep performing long after launch.
           </p>
         </div>
-        <div className="values">
-          {values.map((v) => (
-            <div className="value" key={v.name}>
+        <div className="about-values">
+          {values.map((v, i) => (
+            <div className="value reveal" key={v.name} style={{ transitionDelay: `${i * 70}ms` }}>
               <span className="value-name">{v.name}</span>
               <span className="value-desc">{v.desc}</span>
             </div>

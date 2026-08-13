@@ -3,17 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Salim Technology. AI, software, and cloud infrastructure. Engineered to move your business forward." />
+    <meta name="description" content="Salim Technology. Intelligent systems. Engineered for scale. AI-powered software and cloud infrastructure built with speed, clarity, and control." />
     <meta name="theme-color" content="#0C5233" />
-    <meta property="og:title" content="Salim Technology" />
-    <meta property="og:description" content="AI, software, and cloud infrastructure. Engineered to move your business forward." />
+    <meta property="og:title" content="Salim Technology — Intelligent systems. Engineered for scale." />
+    <meta property="og:description" content="We design and build AI-powered software and cloud infrastructure that help businesses operate with greater speed, clarity, and control." />
     <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://salimtechnology.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" href="/assets/icon-192.png" />
-    <title>Salim Technology | AI, Software and Cloud Infrastructure</title>
+    <title>Salim Technology | Intelligent Systems, Software and Cloud Infrastructure</title>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div class="boot">
+        <img src="/assets/salim-icon.svg" alt="" class="boot-icon" />
+      </div>
+    </div>
+    <style>
+      .boot{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:#F5F5F2}
+      .boot-icon{width:64px;height:64px;animation:bootPulse 1.2s ease-in-out infinite}
+      @keyframes bootPulse{0%,100%{opacity:.45}50%{opacity:1}}
+    </style>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
