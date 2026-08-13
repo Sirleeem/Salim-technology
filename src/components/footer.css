@@ -1,0 +1,46 @@
+.footer {
+  background: var(--black);
+  color: var(--offwhite);
+  padding: var(--space-lg) 0;
+  margin-top: var(--space-xl);
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  align-items: flex-start;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.footer-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.footer-links {
+  display: flex;
+  gap: var(--space-lg);
+}
+
+.footer-links a {
+  color: rgba(245, 245, 242, 0.75);
+  font-weight: 600;
+  transition: color 0.15s ease;
+}
+
+.footer-links a:hover {
+  color: var(--mint);
+}
+
+.footer-note {
+  color: rgba(245, 245, 242, 0.45);
+  font-size: var(--fs-small);
+}

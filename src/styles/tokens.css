@@ -1,0 +1,42 @@
+/* Salim Technology — brand design tokens (locked kit) */
+:root {
+  /* Brand colors */
+  --pine: #0C5233;
+  --pine-dark: #083D26;
+  --mint: #7DD4B0;
+  --mint-soft: #E4F5EF;
+  --offwhite: #F5F5F2;
+  --black: #0A0A0C;
+
+  /* Functional */
+  --text: #0A0A0C;
+  --text-muted: #5A5A58;
+  --line: #E0E0DA;
+  --white: #FFFFFF;
+
+  /* Type scale */
+  --font-display: 'Archivo', system-ui, sans-serif;
+  --font-body: 'Archivo', system-ui, sans-serif;
+
+  --fs-hero: clamp(3rem, 8vw, 6.5rem);
+  --fs-h2: clamp(2rem, 4.5vw, 3.5rem);
+  --fs-h3: clamp(1.25rem, 2vw, 1.6rem);
+  --fs-body: clamp(1rem, 1.2vw, 1.125rem);
+  --fs-small: 0.875rem;
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 6rem;
+
+  /* Radii */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+
+  /* Layout */
+  --container: 1120px;
+  --nav-h: 72px;
+}

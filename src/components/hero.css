@@ -1,0 +1,59 @@
+.hero {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: calc(var(--nav-h) + var(--space-lg)) var(--space-md) var(--space-lg);
+  background:
+    radial-gradient(ellipse 70% 55% at 50% 0%, var(--mint-soft) 0%, transparent 60%),
+    var(--offwhite);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(var(--line) 1px, transparent 1px) 0 0 / 100% 72px,
+    linear-gradient(90deg, var(--line) 1px, transparent 1px) 0 0 / 72px 100%;
+  opacity: 0.35;
+  mask-image: radial-gradient(ellipse 80% 65% at 50% 35%, black 30%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero-inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.hero-icon {
+  width: clamp(84px, 12vw, 128px);
+  height: auto;
+  filter: drop-shadow(0 12px 28px rgba(12, 82, 51, 0.18));
+}
+
+.hero-wordmark {
+  width: min(520px, 84vw);
+  height: auto;
+}
+
+.hero-tagline {
+  max-width: 620px;
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+.hero-actions {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: var(--space-xs);
+}
