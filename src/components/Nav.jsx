@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import './nav.css'
 
 const links = [
@@ -9,16 +9,27 @@ const links = [
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false)
+  const [hidden, setHidden] = useState(false)
+  const lastY = useRef(0)
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24)
+    const onScroll = () => {
+      const y = window.scrollY
+      setScrolled(y > 24)
+
+      // Auto-hide the header when scrolling down past it; reveal on scroll up.
+      const pastHeader = y > 72
+      const scrollingDown = y > lastY.current
+      setHidden(pastHeader && scrollingDown)
+      lastY.current = y
+    }
     onScroll()
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
   return (
-    <nav className={`nav ${scrolled ? 'nav-scrolled' : ''}`}>
+    <nav className={`nav ${scrolled ? 'nav-scrolled' : ''} ${hidden ? 'nav-hidden' : ''}`}>
       <div className="container nav-inner">
         <a href="#top" className="nav-brand">
           <img src="/assets/salim-icon.svg" alt="" className="nav-brand-icon" />
