@@ -17,7 +17,7 @@
   gap: 0.4rem;
   background: var(--white);
   border: 1px solid var(--line);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-card);
   padding: var(--space-lg) var(--space-md);
   color: var(--text);
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
