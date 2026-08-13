@@ -7,7 +7,7 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.ico', 'assets/salim-icon.svg', 'assets/wordmark-v2.svg'],
+      includeAssets: ['favicon.ico', 'assets/salim-icon.svg', 'assets/wordmark-v3.svg'],
       manifest: {
         name: 'Salim Technology',
         short_name: 'SalimTech',

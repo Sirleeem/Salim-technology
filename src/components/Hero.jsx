@@ -5,7 +5,7 @@ export default function Hero() {
     <header className="hero" id="top">
       <div className="container hero-inner">
         <img src="/assets/salim-icon.svg" alt="Salim Technology" className="hero-icon" />
-        <img src="/assets/wordmark-v2.svg" alt="SALIM TECHNOLOGY" className="hero-wordmark" />
+        <img src="/assets/wordmark-v3.svg" alt="SALIM TECHNOLOGY" className="hero-wordmark" />
         <p className="hero-tagline">
           AI, software, and cloud infrastructure. Engineered to move your business forward.
         </p>
