@@ -76,7 +76,7 @@ section {
   align-items: center;
   gap: var(--space-xs);
   padding: 0.9rem 1.8rem;
-  border-radius: 999px;
+  border-radius: 2px;
   font-weight: 700;
   font-size: 1rem;
   letter-spacing: 0.02em;
