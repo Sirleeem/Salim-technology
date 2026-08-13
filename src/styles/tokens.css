@@ -1,4 +1,4 @@
-/* Salim Technology — brand design tokens (locked kit) */
+/* Salim Technology brand design tokens (locked kit) */
 :root {
   /* Brand colors */
   --pine: #0C5233;
@@ -31,7 +31,7 @@
   --space-lg: 4rem;
   --space-xl: 6rem;
 
-  /* Radii — asymmetric, machine-cut (sharp corner = bottom-right, where the t lives in the Interlock) */
+  /* Radii: asymmetric, machine-cut (sharp corner = bottom-right, where the t lives in the Interlock) */
   --radius-sm: 4px;
   --radius-md: 10px;
   --radius-lg: 14px;

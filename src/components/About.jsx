@@ -1,7 +1,7 @@
 import './about.css'
 
 const values = [
-  { name: 'Precision', desc: 'Built with intent. No fluff, no shortcuts — every detail serves the outcome.' },
+  { name: 'Precision', desc: 'Built with intent. No fluff, no shortcuts. Every detail serves the outcome.' },
   { name: 'Automation', desc: 'If a machine can do it, it should. We design systems that run themselves.' },
   { name: 'Scalability', desc: 'Built to grow. Your infrastructure and software scale with your ambition.' },
 ]
@@ -15,7 +15,7 @@ export default function About() {
           <h2>Technology is only useful when it ships.</h2>
           <p className="about-lead">
             We build AI, software, and cloud systems that are practical, reliable, and
-            built for the real work of your business — from first build to long-term operation.
+            built for the real work of your business. From first build to long-term operation.
           </p>
         </div>
         <div className="values">
