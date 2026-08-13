@@ -14,6 +14,7 @@ export default function Footer() {
           <a href="https://wa.me/2349026482998" target="_blank" rel="noreferrer">WhatsApp</a>
         </div>
         <p className="footer-note">© {new Date().getFullYear()} Salim Technology. All rights reserved.</p>
+        <p className="footer-note">CAC Registration No: BN-9760415</p>
       </div>
     </footer>
   )
