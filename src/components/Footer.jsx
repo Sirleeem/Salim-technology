@@ -37,7 +37,7 @@ export default function Footer() {
       <div className="container footer-inner">
         <div className="footer-brand">
           <img src="/assets/salim-icon.svg" alt="" className="footer-icon" />
-          <span>Salim Technology</span>
+          <span>SALIM TECHNOLOGY</span>
         </div>
         <div className="footer-links">
           {links.map((l) => (
