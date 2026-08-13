@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <header className="hero" id="top">
       <div className="container hero-inner">
-        <img src="/assets/salim-icon.svg" alt="" className="hero-icon" />
+        <img src="/assets/salim-icon-mint-s.svg" alt="" className="hero-icon" />
         <img src="/assets/wordmark-v3.svg" alt="SALIM TECHNOLOGY" className="hero-wordmark" />
         <h1 className="hero-headline">Intelligent systems. Engineered for scale.</h1>
         <p className="hero-tagline">

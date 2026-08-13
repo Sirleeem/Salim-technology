@@ -41,7 +41,7 @@ export default function Nav() {
     <nav className={`nav ${scrolled ? 'nav-scrolled' : ''} ${hidden ? 'nav-hidden' : ''} ${menuOpen ? 'nav-menu-open' : ''}`}>
       <div className="container nav-inner">
         <a href="#top" className="nav-brand" onClick={() => toggleMenu(false)}>
-          <img src="/assets/salim-icon.svg" alt="" className="nav-brand-icon" />
+          <img src="/assets/salim-icon-mint-s.svg" alt="" className="nav-brand-icon" />
           <span className="nav-brand-name">SALIM<span className="nav-brand-tech">TECHNOLOGY</span></span>
         </a>
         <div className="nav-links">
