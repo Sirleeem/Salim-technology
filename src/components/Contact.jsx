@@ -1,10 +1,9 @@
 import { useState } from 'react'
 import './contact.css'
 
-// FormSubmit AJAX endpoint (free tier) — delivers to hello@salimtechnology.com.
-// First submission sends a one-time confirmation email to that inbox; click
-// the link inside to activate. No account or access key required.
-const FORM_ENDPOINT = 'https://formsubmit.co/ajax/hello@salimtechnology.com'
+// Web3Forms access key — delivers to hello@salimtechnology.com.
+// Public by design; safe to ship client-side.
+const WEB3FORMS_ACCESS_KEY = '336d1ca1-cab1-4dbf-a2e1-5c3ecdd3e785'
 
 const contacts = [
   {
@@ -38,17 +37,16 @@ export default function Contact() {
     if (status === 'sending') return
     setStatus('sending')
     try {
-      const res = await fetch(FORM_ENDPOINT, {
+      const res = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({
+          access_key: WEB3FORMS_ACCESS_KEY,
           name: form.name,
           email: form.email,
           message: form.message,
-          _subject: 'New project inquiry — salimtechnology.com',
-          _template: 'table',
-          _captcha: 'false',
-          _honey: form.botcheck,
+          botcheck: form.botcheck,
+          subject: 'New project inquiry — salimtechnology.com',
         }),
       })
       const data = await res.json()
