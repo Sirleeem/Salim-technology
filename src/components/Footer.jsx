@@ -50,7 +50,17 @@ export default function Footer() {
           ))}
         </div>
         <p className="footer-note">© {new Date().getFullYear()} Salim Technology. All rights reserved.</p>
-        <p className="footer-note">BN-9760415</p>
+        <p className="footer-note">SALIM TECHNOLOGY — BN 9760415, registered in Nigeria (CAC)</p>
+        <p className="footer-note">22, Yaya Arabi Street, Gombe, Gombe State, Nigeria</p>
+        <p className="footer-note">
+          Customer support: hello@salimtechnology.com · +234 902 648 2998 · Mon–Sat, 9:00–18:00 WAT
+        </p>
+        <p className="footer-note footer-legal-links">
+          <a href="/terms.html">Terms of Service</a> ·{' '}
+          <a href="/privacy.html">Privacy Policy</a> ·{' '}
+          <a href="/refund.html">Refund Policy</a> ·{' '}
+          <a href="/delivery.html">Delivery &amp; Fulfillment Policy</a>
+        </p>
       </div>
     </footer>
   )
