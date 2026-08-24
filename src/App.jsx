@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import Nav from './components/Nav.jsx'
 import Hero from './components/Hero.jsx'
 import Services from './components/Services.jsx'
+import Products from './components/Products.jsx'
 import HowWeWork from './components/HowWeWork.jsx'
 import About from './components/About.jsx'
 import Contact from './components/Contact.jsx'
@@ -39,6 +40,7 @@ export default function App() {
       <main>
         <Hero />
         <Services />
+        <Products />
         <HowWeWork />
         <About />
         <Contact />

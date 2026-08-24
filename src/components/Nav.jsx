@@ -3,6 +3,7 @@ import './nav.css'
 
 const links = [
   { href: '#services', label: 'Services' },
+  { href: '#products', label: 'Products' },
   { href: '#process', label: 'How we work' },
   { href: '#about', label: 'About' },
   { href: '#contact', label: 'Contact' },
